@@ -13,5 +13,8 @@ class Country:
   def population_density(self):
     return self.population/self.area
 
-  #def __str__(self):
-  #  return .format(self.name, self.population, self.area)
+   def __str__(self):
+        return ("{0} has a population of {1} and its area is {2} square kilometers.".format(self.name,self.population,self.area))
+      
+    def __repr__(self):
+        return "Country('{0}', {1}, {2})".format(self.name, self.population, self.area)
